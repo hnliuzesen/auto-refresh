@@ -1,0 +1,55 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 220px;
+}
+
+main {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#interval-input {
+    width: 90px;
+    padding: 6px 8px;
+    font-size: 14px;
+}
+
+#toggle-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a73e8;
+    color: #fff;
+    cursor: pointer;
+}
+
+#toggle-button.stop {
+    background-color: #d93025;
+}
+
+#toggle-button:disabled {
+    cursor: not-allowed;
+    background-color: #9aa0a6;
+}
+
+#status-text {
+    font-size: 13px;
+    color: #5f6368;
+    margin: 0;
+}

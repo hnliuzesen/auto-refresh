@@ -1,0 +1,64 @@
+{
+  "extensionName": {
+    "message": "Auto Refresh Tabs",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Automatically refresh individual tabs on a custom interval.",
+    "description": "Description of the extension."
+  },
+  "extensionTitle": {
+    "message": "Auto Refresh",
+    "description": "Title of the extension's action."
+  },
+  "popupTitle": {
+    "message": "Auto Refresh",
+    "description": "Title of the popup window."
+  },
+  "refreshIntervalLabel": {
+    "message": "Refresh interval (seconds)",
+    "description": "Label for the interval input."
+  },
+  "startButton": {
+    "message": "Start",
+    "description": "Text for the start button."
+  },
+  "stopButton": {
+    "message": "Stop",
+    "description": "Text for the stop button."
+  },
+  "statusOff": {
+    "message": "Auto refresh is off.",
+    "description": "Status text when auto refresh is off."
+  },
+  "statusOn": {
+    "message": "Auto refresh every $interval$ seconds.",
+    "description": "Status text when auto refresh is on.",
+    "placeholders": {
+      "interval": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "errorInterval": {
+    "message": "Interval must be a positive integer.",
+    "description": "Error message for invalid interval."
+  },
+  "errorActiveTab": {
+    "message": "Active tab not found.",
+    "description": "Error message when active tab is not found."
+  },
+  "errorStop": {
+    "message": "Failed to stop auto refresh.",
+    "description": "Error message when failing to stop."
+  },
+  "errorStart": {
+    "message": "Failed to start auto refresh.",
+    "description": "Error message when failing to start."
+  },
+  "errorNoActiveTab": {
+    "message": "No active tab found.",
+    "description": "Error message when no active tab is found."
+  }
+}

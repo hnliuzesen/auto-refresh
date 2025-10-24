@@ -1,0 +1,64 @@
+{
+  "extensionName": {
+    "message": "自动刷新标签页",
+    "description": "扩展程序的名称。"
+  },
+  "extensionDescription": {
+    "message": "按自定义时间间隔自动刷新单个标签页。",
+    "description": "扩展程序的描述。"
+  },
+  "extensionTitle": {
+    "message": "自动刷新",
+    "description": "扩展程序操作的标题。"
+  },
+  "popupTitle": {
+    "message": "自动刷新",
+    "description": "弹出窗口的标题。"
+  },
+  "refreshIntervalLabel": {
+    "message": "刷新间隔（秒）",
+    "description": "时间间隔输入的标签。"
+  },
+  "startButton": {
+    "message": "开始",
+    "description": "开始按钮的文本。"
+  },
+  "stopButton": {
+    "message": "停止",
+    "description": "停止按钮的文本。"
+  },
+  "statusOff": {
+    "message": "自动刷新已关闭。",
+    "description": "自动刷新关闭时的状态文本。"
+  },
+  "statusOn": {
+    "message": "每 $interval$ 秒自动刷新。",
+    "description": "自动刷新开启时的状态文本。",
+    "placeholders": {
+      "interval": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "errorInterval": {
+    "message": "时间间隔必须是正整数。",
+    "description": "无效时间间隔的错误消息。"
+  },
+  "errorActiveTab": {
+    "message": "未找到活动标签页。",
+    "description": "未找到活动标签页时的错误消息。"
+  },
+  "errorStop": {
+    "message": "停止自动刷新失败。",
+    "description": "停止失败时的错误消息。"
+  },
+  "errorStart": {
+    "message": "启动自动刷新失败。",
+    "description": "启动失败时的错误消息。"
+  },
+  "errorNoActiveTab": {
+    "message": "未找到活动标签页。",
+    "description": "未找到活动标签页时的错误消息。"
+  }
+}
