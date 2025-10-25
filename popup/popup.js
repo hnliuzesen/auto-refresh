@@ -37,11 +37,15 @@ function updateUi() {
     if (isRunning) {
         toggleButton.textContent = chrome.i18n.getMessage('stopButton');
         toggleButton.classList.add('stop');
-        statusText.textContent = chrome.i18n.getMessage('statusOn', [activeInterval]);
+        const statusMsg = chrome.i18n.getMessage('statusOn');
+        const wordOn = chrome.i18n.getMessage('statusWordOn');
+        statusText.innerHTML = statusMsg.replace(wordOn, `<span class="on">${wordOn}</span>`);
     } else {
         toggleButton.textContent = chrome.i18n.getMessage('startButton');
         toggleButton.classList.remove('stop');
-        statusText.textContent = chrome.i18n.getMessage('statusOff');
+        const statusMsg = chrome.i18n.getMessage('statusOff');
+        const wordOff = chrome.i18n.getMessage('statusWordOff');
+        statusText.innerHTML = statusMsg.replace(wordOff, `<span class="off">${wordOff}</span>`);
     }
 }
 
@@ -101,7 +105,6 @@ async function handleToggleClick() {
     } catch (error) {
         console.error(error);
         await loadState();
-        updateUi();
         statusText.textContent = error.message;
     } finally {
         toggleButton.disabled = false;
@@ -130,5 +133,20 @@ async function init() {
 }
 
 toggleButton.addEventListener('click', handleToggleClick);
+
+intervalInput.addEventListener('wheel', (event) => {
+    // a wheel event has a deltaY property, which is positive for scrolling down and negative for scrolling up
+    if (event.deltaY < 0) {
+        intervalInput.value = Number(intervalInput.value) + 1;
+    } else {
+        const nextValue = Number(intervalInput.value) - 1;
+        if (nextValue > 0) {
+            intervalInput.value = nextValue;
+        }
+    }
+
+    // prevent the page from scrolling
+    event.preventDefault();
+});
 
 init();

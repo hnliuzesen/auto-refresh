@@ -4,7 +4,7 @@
     "description": "扩展程序的名称。"
   },
   "extensionDescription": {
-    "message": "按自定义时间间隔自动刷新单个标签页。",
+    "message": "按自定义时间间隔刷新标签页。",
     "description": "扩展程序的描述。"
   },
   "extensionTitle": {
@@ -32,14 +32,8 @@
     "description": "自动刷新关闭时的状态文本。"
   },
   "statusOn": {
-    "message": "每 $interval$ 秒自动刷新。",
-    "description": "自动刷新开启时的状态文本。",
-    "placeholders": {
-      "interval": {
-        "content": "$1",
-        "example": "10"
-      }
-    }
+    "message": "自动刷新已开启。",
+    "description": "自动刷新开启时的状态文本。"
   },
   "errorInterval": {
     "message": "时间间隔必须是正整数。",
@@ -60,5 +54,13 @@
   "errorNoActiveTab": {
     "message": "未找到活动标签页。",
     "description": "未找到活动标签页时的错误消息。"
+  },
+  "statusWordOn": {
+    "message": "开启",
+    "description": "状态文本中的‘开启’一词。"
+  },
+  "statusWordOff": {
+    "message": "关闭",
+    "description": "状态文本中的‘关闭’一词。"
   }
 }

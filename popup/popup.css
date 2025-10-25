@@ -9,12 +9,13 @@ main {
     padding: 16px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 label {
     font-size: 14px;
     color: #333;
+    margin: 0;
 }
 
 .input-group {
@@ -25,22 +26,34 @@ label {
 
 #interval-input {
     width: 90px;
-    padding: 6px 8px;
+    padding: 8px;
     font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 #toggle-button {
-    padding: 6px 12px;
+    padding: 8px 16px;
     font-size: 14px;
     border: none;
     border-radius: 4px;
     background-color: #1a73e8;
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#toggle-button:hover {
+    background-color: #1558b8;
 }
 
 #toggle-button.stop {
     background-color: #d93025;
+}
+
+#toggle-button.stop:hover {
+    background-color: #b0251b;
 }
 
 #toggle-button:disabled {
@@ -50,6 +63,14 @@ label {
 
 #status-text {
     font-size: 13px;
-    color: #5f6368;
     margin: 0;
+    font-weight: bold;
+}
+
+#status-text .on {
+    color: #0f9d58;
+}
+
+#status-text .off {
+    color: #ea4335;
 }
