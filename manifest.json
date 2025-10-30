@@ -10,8 +10,7 @@
     "128": "/images/icon128.png"
   },
   "permissions": [
-    "storage",
-    "tabs"
+    "storage"
   ],
   "host_permissions": [
     "<all_urls>"
